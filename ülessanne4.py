@@ -43,11 +43,34 @@ else:
     hind= hind +hind*0.1
 print(hind, "€")
 
+#meeskond
 a= input("Sisesta sugu: ")
-if a == "m":
+if a == "m": 
     b= int(input("Sisesta vanus: "))
     if b >= 16 and b<= 18:
         print('sobib')
     else:
         print('ei sobi')
-    
+else: 
+    print('ei sobi')
+
+for rida in range(0,5):
+    for veerg in range(0,5):
+        print('* ', end=' ')
+    print()
+print()
+print()
+a= 0
+for rida in range(0,5):
+    a=a+1
+    for veerg in range(0,a):
+            print('* ', end=' ')
+    print()
+print()
+print()
+a= 5
+for rida in range(0,a):
+    a=a-1
+    for veerg in range(0,5):
+            print('* ', end=' ')
+    print()
