@@ -1,6 +1,7 @@
 # ülesanne 4
 # Kristofer Andres
 # 03.02.2022
+import random
 
 #ruut
 a= int(input("Sisesta esimene külg: "))
@@ -68,9 +69,30 @@ for rida in range(0,5):
     print()
 print()
 print()
-a= 5
-for rida in range(0,a):
+a=6
+print()
+for rida in range(0,5):
     a=a-1
-    for veerg in range(0,5):
+    for veerg in range(0,a):
             print('* ', end=' ')
     print()
+print()
+for a in range(0,5):
+    print(random.randint(1,9), end='')
+
+for number in range(0,100):
+    if number%2==0:
+        print('paaris')
+    else:
+        print('paaritu')
+print()
+
+#viisikud
+for a in range(0,10):
+    print(f'{a} x 5 = ', a*5)
+    
+for a in range(0,100):
+    if a%5==0:
+        print(f'{a}')
+
+
