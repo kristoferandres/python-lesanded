@@ -94,5 +94,40 @@ for a in range(0,10):
 for a in range(0,100):
     if a%5==0:
         print(f'{a}')
+        
+kordus=1
+while kordus == 1:
+    arv = random.randint(1,30)
+    katseid= 3
+    for a in range(1,4):
+        arvamus = int(input(f"Arva arv vahemikus 1-30, katseid jäänud {katseid}: "))
+        katseid-=1
+        if arvamus == arv:
+            print (f'arvasid ära {a} korraga.')
+            break
+    print(f'arv oli {arv}')
+    valik = input('kas tahad uuesti proovida? (jah, ei)')
+    if valik == 'ei':
+        kordus = 0
+        
+aastad = 5
+summa = 10000
+intress =0.05
+print(f'{"aasta ":4}  {"algsumma ":6}  {"juurde ":8}  {"lõppsumma":10}')
+for aastad in range(1,aastad+1):
+    intressjuurde = summa *intress
+    lõppsumma = summa + intressjuurde
+    print(f'{aastad:4}  {summa:6}  {intressjuurde:8}  {lõppsumma:10}')
+    summa = summa + intressjuurde
+print()
+ 
+print(f'{"arv":4} {"ruut":6} {"kuup":8}')
+for arv in range(1,11):
+    print(f'{arv:4} {arv**2:6} {arv**3:8}')
+    
+
+
+
+        
 
 
