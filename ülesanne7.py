@@ -32,7 +32,7 @@ while i == 0 :
     def kera():
         a = int(input('Sisesta kera diameeter: '))
         print()
-        print(f'kera ruumala: {a*a*math.pi}')
+        print(f'kera ruumala: {(4*math.pi*a**3)/3}')
         print()
         
     def koonus():
