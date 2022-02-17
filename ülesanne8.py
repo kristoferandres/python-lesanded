@@ -1,13 +1,11 @@
 class auto:
-    #atribuudid
+
     mark = 'teadmata'
     aasta = 0
     hind = 0
     kiirus = 0
     varv = 'teadmata'
     
-    
-    #meetodid
     def lisamark(self,a):
         self.mark = a
         
