@@ -23,43 +23,47 @@ while i == 0 :
         print('3 koonus')
         print('4 silinder')
     
-    def kuup():
-        a = int(input('Sisesta kuubi külg: '))
-        print()
-        print(f'kuubi pindala: {a*a*a}')
-        print()
-    
-    def kera():
-        a = int(input('Sisesta kera diameeter: '))
-        print()
-        print(f'kera ruumala: {(4*math.pi*a**3)/3}')
-        print()
-        
-    def koonus():
-        a = int(input('Sisesta koonuse põhja raadius: '))
-        b = int(input('Sisesta koonuse kõrgus: '))
-        print()
-        print(f'koonuse ruumala: {a*a*math.pi*(1/3)*b}')
-        print()
-        
-    def silinder():
-        a = int(input('Sisesta silindri põhja raadius: '))
-        b = int(input('Sisesta silindri kõrgus: '))
-        print()
-        print(f'koonuse ruumala: {a*a*math.pi**b}')
-        print()
+    def kuup(a):
+        v=a**3
+        return v
+    def kera(a):
+        v=(4*math.pi*a**3)/3
+        return v
+    def koonus(a,b):
+        v=(math.pi*a**2*b)/3
+        return v         
+    def silinder(a,b):
+        v=math.pi*a**2*b
+        return v 
+            
         
         
     kujund()
     valik = int(input('Vali kujund: '))
     if valik==1:
-        kuup()
+        print()
+        a = int(input('Sisesta kuubi külg: '))
+        print(kuup(a))
+        print()
+          
+        
     elif valik == 2:
-        kera()
+        a = int(input('Sisesta kera raadius: '))
+        print()
+        print(kera(a))
+        print()
     elif valik == 3:
-        koonus()
+        a = int(input('Sisesta koonuse põhja raadius: '))
+        b = int(input('Sisesta koonuse kõrgus: '))
+        print()
+        print(koonus(a,b))
+        print()
     elif valik == 4:
-        silinder()
+        a = int(input('Sisesta silindri põhja raadius: '))
+        b = int(input('Sisesta silindri kõrgus: '))
+        print()
+        print(silinder(a,b))
+        print()
     else:
         i = 1
 
