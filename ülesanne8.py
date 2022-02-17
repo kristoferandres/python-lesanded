@@ -1,3 +1,9 @@
+# ülesanne 8
+# Kristofer Andres
+# 17.02.2022
+
+
+
 class auto:
 
     mark = 'teadmata'
